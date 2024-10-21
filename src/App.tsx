@@ -87,7 +87,7 @@ function App() {
                 <p className='text-[1rem] text-center m-[0_0_10px_0] text-white font-medium'>Поля НЕ должны быть <span className='underline'>пустыми</span></p>
               }
               {(!isCorrect(sideA) || !isCorrect(sideB) || !isCorrect(sideC)) &&
-                <p className='text-[1rem] text-center m-[0_0_10px_0] text-white font-medium'>Можно вводить только <span className='underline'>цифры</span></p>
+                <p className='text-[1rem] text-center m-[0_0_10px_0] text-white font-medium'>Можно вводить только <span className='underline'>положительные целые числа</span></p>
               }
             </>
           }
