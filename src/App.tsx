@@ -2,10 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 
 function getResult(sideA: number, sideB: number, sideC: number) {
-  if (
-    sideA > sideB + sideC || sideB > sideA + sideC || sideC > sideA + sideB ||
-    sideA == 0 || sideB == 0 || sideC == 0
-  ) {
+  if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideA + sideB) {
     return "Такого треугольника не существует";
   } else if (sideA == sideB && sideA == sideC) {
     return "Полученный треугольник равносторонний";
